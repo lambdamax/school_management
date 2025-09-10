@@ -1,6 +1,4 @@
-# Project Title: School Management System
-# Author: Sebastian Hsiao
-# Date: 2025-04-22
+# Management System
 
 """
 This script simulates a simple school management system

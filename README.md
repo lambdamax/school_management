@@ -1,58 +1,63 @@
-# School Management Simulation
+# School Management System
 
 ## Table of Contents
-- [School Management Simulation](#school-management-simulation)
+- [School Management System](#school-management-system)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Features](#features)
   - [Technologies Used](#technologies-used)
-  - [Classes and Methods](#classes-and-methods)
-  - [Example Use Cases](#example-use-cases)
+  - [Main Classes](#main-classes)
+  - [Example Usage](#example-usage)
   - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [License](#license)
-  - [Credits](#credits)
 
 ## Overview
-This program simulates a simple school management system, allowing users to manage students, teachers, and courses in a realistic and easy-to-use environment. The simulation provides a comprehensive framework for tracking student grades, assigning teachers to courses, and displaying a summary of the school environment.
+This project is a Python-based simulation of a school management system. It models real-world entities such as students, teachers, and courses, allowing users to:
+- Manage students, teachers, and courses
+- Assign grades and simulate friendships
+- Display a summary of the school environment
+The simulation is interactive and extensible, making it suitable for educational purposes or as a foundation for more advanced school management applications.
 
 ## Features
-- Manage students, teachers, and courses
-- Assign grades to students for each course
+- Object-oriented design for easy extension
+- Add and manage students, teachers, and courses
 - Assign teachers to courses
-- Display a summary of the school environment, including student grades and teacher assignments
+- Enroll students in courses
+- Assign and update grades for students
 - Simulate friendships among students
-- Randomly assigns grades to students for each course
-- Simulates a school environment with multiple students, teachers, and courses
+- Display a summary of students, grades, favorite subjects, and friendships
+- Example Jupyter notebook for running simulations
 
 ## Technologies Used
 - Python 3.8+
-- Object-Oriented Programming (OOP) concepts to model real-world entities such as students, teachers, and courses
+- Object-Oriented Programming (OOP)
 
-## Classes and Methods
-- `Student` class: represents a student with attributes such as name, grades, and friends
-- `Teacher` class: represents a teacher with attributes such as name and courses taught
-- `Course` class: represents a course with attributes such as name, teacher, and students enrolled
-- `School` class: represents the school with attributes such as name, students, teachers, and courses
-- Methods for adding students, teachers, and courses, as well as assigning grades and simulating friendships
+## Main Classes
+- `Person`: Base class for all people in the school
+- `Student`: Inherits from `Person`, tracks grades, favorite subject, and friends
+- `Teacher`: Inherits from `Person`, manages courses taught
+- `Course`: Holds course name, teacher, and enrolled students
+- `School`: Manages all students, teachers, and courses; simulates grades and friendships
 
-## Example Use Cases
-- Create a new school with multiple students, teachers, and courses
-- Assign grades to students for each course
-- Display a summary of the school environment, including student grades and teacher assignments
-- Simulate friendships among students
+## Example Usage
+See `test_school.ipynb` for a step-by-step simulation:
+1. Create a school, courses, teachers, and students
+2. Assign teachers to courses and enroll students
+3. Simulate grades and friendships
+4. Display a summary of the school environment
 
 ## Getting Started
-To get started with the simulation, simply run the program and follow the prompts to create students, teachers, and courses. You can then use the various methods provided to manage the school environment and simulate different scenarios.
+1. Clone the repository:
+  ```bash
+  git clone [repo_url]
+  ```
+2. Open `test_school.ipynb` in Jupyter or VS Code to run the simulation interactively.
+3. Alternatively, use `school_management.py` to extend or customize the system in your own scripts.
 
 ## Requirements
-Python 3.8+
-No external dependencies required
+- Python 3.8+
+- No external dependencies
 
 ## License
-This program is licensed under the MIT License. See the LICENSE file for details.
-
-## Credits
-- Developed by Sebastian Hsiao
-- Inspired by real-world school management systems
-- Special thanks to the Python community for their support and resources.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
